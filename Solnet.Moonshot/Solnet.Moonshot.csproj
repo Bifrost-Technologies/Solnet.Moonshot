@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Solnet.Moonshot</Title>
+    <Company>Bifrost Inc</Company>
+    <Authors>Bifrost</Authors>
+    <Description>C# SDK for Dexscreener's Moonshot program</Description>
+    <Copyright>Bifrost Inc</Copyright>
+    <PackageProjectUrl>https://github.com/Bifrost-Technologies/Solnet.Moonshot</PackageProjectUrl>
+    <PackageIcon>moonshot.png</PackageIcon>
+    <RepositoryUrl>https://github.com/Bifrost-Technologies/Solnet.Moonshot</RepositoryUrl>
+    <PackageTags>solnet, solana, moonshot, dexscreener, net8, net 8, bifrost</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Desktop\moonshot.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Solana.Extensions" Version="8.0.2" />
+    <PackageReference Include="Solana.KeyStore" Version="8.0.2" />
+    <PackageReference Include="Solana.Programs" Version="8.0.2" />
+    <PackageReference Include="Solana.Rpc" Version="8.0.2" />
+    <PackageReference Include="Solana.Wallet" Version="8.0.2" />
+  </ItemGroup>
+
+</Project>
