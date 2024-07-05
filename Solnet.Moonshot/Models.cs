@@ -31,8 +31,6 @@ namespace Solnet.Moonshot
     {
         public PublicKey Sender { get; set; }
 
-        public PublicKey BackendAuthority { get; set; }
-
         public PublicKey SenderTokenAccount { get; set; }
 
         public PublicKey CurveAccount { get; set; }
@@ -57,8 +55,6 @@ namespace Solnet.Moonshot
     public class SellAccounts
     {
         public PublicKey Sender { get; set; }
-
-        public PublicKey BackendAuthority { get; set; }
 
         public PublicKey SenderTokenAccount { get; set; }
 
