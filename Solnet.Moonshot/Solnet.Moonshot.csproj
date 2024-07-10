@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Title>Solnet.Moonshot</Title>
+    <Title>Solana.Moonshot</Title>
     <Company>Bifrost Inc</Company>
     <Authors>Bifrost</Authors>
     <Description>C# SDK for Dexscreener's Moonshot program</Description>
@@ -14,10 +14,18 @@
     <PackageIcon>moonshot.png</PackageIcon>
     <RepositoryUrl>https://github.com/Bifrost-Technologies/Solnet.Moonshot</RepositoryUrl>
     <PackageTags>solnet, solana, moonshot, dexscreener, net8, net 8, bifrost</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageId>Solana.Moonshot</PackageId>
+    <AnalysisLevel>latest-all</AnalysisLevel>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
     <None Include="..\..\..\..\Desktop\moonshot.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
