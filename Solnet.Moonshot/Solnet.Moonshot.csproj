@@ -18,6 +18,7 @@
     <PackageId>Solana.Moonshot</PackageId>
     <AnalysisLevel>latest-all</AnalysisLevel>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>

@@ -36,7 +36,8 @@ namespace Solnet.Moonshot
                 CurveAccount = PDALookup.FindCurvePDA(tokenAddress),
                 CurveTokenAccount = AssociatedTokenAccountProgram.DeriveAssociatedTokenAccount(curveAccount, tokenAddress),
                 Sender = senderAccount.PublicKey,
-                SenderTokenAccount = AssociatedTokenAccountProgram.DeriveAssociatedTokenAccount(senderAccount.PublicKey, tokenAddress)
+                SenderTokenAccount = AssociatedTokenAccountProgram.DeriveAssociatedTokenAccount(senderAccount.PublicKey, tokenAddress),
+                Mint = tokenAddress
             };
             TransactionInstruction instr = MoonshotProgram.Buy(accounts, order);
             TransactionBuilder tb = new TransactionBuilder();
@@ -61,7 +62,8 @@ namespace Solnet.Moonshot
                 CurveAccount = PDALookup.FindCurvePDA(tokenAddress),
                 CurveTokenAccount = AssociatedTokenAccountProgram.DeriveAssociatedTokenAccount(curveAccount, tokenAddress),
                 Sender = senderAccount.PublicKey,
-                SenderTokenAccount = AssociatedTokenAccountProgram.DeriveAssociatedTokenAccount(senderAccount.PublicKey, tokenAddress)
+                SenderTokenAccount = AssociatedTokenAccountProgram.DeriveAssociatedTokenAccount(senderAccount.PublicKey, tokenAddress),
+                Mint = tokenAddress
             };
             TransactionInstruction instr = MoonshotProgram.Sell(accounts, order);
             TransactionBuilder tb = new TransactionBuilder();
