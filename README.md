@@ -1,5 +1,16 @@
+
+![moonshot](https://github.com/user-attachments/assets/3aff7437-2e76-4444-b52f-ecf27b2c9bc4)
+
 # Solnet.Moonshot
-Solnet.Moonshot is a C# client implementation of the Moonshot on-chain program.
+Solnet.Moonshot is a C# SDK & Client for the Moonshot on-chain program.
+
+### Dependencies
+- NET8
+- Solnet.Rpc
+- Solnet.Wallet
+- Solnet.Programs
+
+#### Search for the NET8 tag on nuget to find the latest versions of Solnet
 
 # Quick start example:
 ```
